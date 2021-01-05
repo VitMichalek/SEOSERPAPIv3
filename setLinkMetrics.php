@@ -3,7 +3,7 @@
 include "seoserpapi.php";
 
 
-//pingback_url -> this url send notification when task is ready for download. 
+//pingback_url -> to this url send notification when task is ready for download. 
 //result ->  JSON
 
 $postArray = array(
