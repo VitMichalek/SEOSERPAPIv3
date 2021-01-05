@@ -36,6 +36,15 @@ if(is_array($result)){
 }
 echo $uuid; //save this UUID for check status
 
+/*
+$postArray = array(
+	"uuid"=>$uuid
+);
+
+$result = SEOSERPAPI::get("v3/check/",$postArray);
+//check.php
+*/
+
 
 
 
