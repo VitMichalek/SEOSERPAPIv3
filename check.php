@@ -8,8 +8,16 @@ $postArray = array(
 );
 SEOSERPAPI::$apiToken = "XXX";
 $result = SEOSERPAPI::get("v3/check/",$postArray);
-
-print_r(json_decode($result,true));
+$data = json_decode($result,true);
+if($data["status"] == "200"){
+	if($data[0]["status"] == "H"){
+		//getResults.php
+	}else{
+		//task isnt ready for download
+	}
+}else{
+	print_r($result);
+}
 
 /*
 

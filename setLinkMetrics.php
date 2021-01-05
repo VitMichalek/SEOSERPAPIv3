@@ -27,22 +27,24 @@ $result = SEOSERPAPI::send("v3/setLinkMetrics/",$postArray);
 
 if(is_array($result)){
 	if($result["status"] == 200){
-		$uuid = $result["uuid"];//uuid for getResults
+		$uuid = $result["uuid"];//uuid for getResults/checkstatus
 	}else{
 		echo $result["error"];
 	}
 }else{
 	echo "Error";
 }
-echo $uuid; //save this UUID for check status
 
 /*
+
+// Check status (check.php)
 $postArray = array(
 	"uuid"=>$uuid
 );
 
 $result = SEOSERPAPI::get("v3/check/",$postArray);
-//check.php
+
+
 */
 
 

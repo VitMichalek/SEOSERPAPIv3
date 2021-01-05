@@ -13,5 +13,6 @@ $postArray = array(
 SEOSERPAPI::$apiToken = "XXXX";
 $result = SEOSERPAPI::get("v3/getResults/",$postArray);//
 
-echo $result;
+
+
 ?>
